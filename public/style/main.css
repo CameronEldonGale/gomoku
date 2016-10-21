@@ -1,0 +1,42 @@
+.text{
+  height: 10vh;
+  border: solid black 1px;
+  overflow: auto;
+}
+
+.gameboard{
+  background: url('../img/Fraxinus_excelsior_wood_tangent_section_1_beentree.jpg'),url('../img/go_board.svg');
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  width: 97%;
+  margin: 10% 1%;
+  /*background: #e9c372;*/
+  /*height: 50vh;*/
+  border: black solid 1px;
+}
+.row{
+  height: calc(100% / 19);
+  width: 100%;
+  /*display: flex;*/
+}
+.cell{
+  height: 100%;
+  width: calc(100% / 19);
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.piece{
+  height: 80%;
+  width: 80%;
+  background: blue;
+  border-radius: 50%;
+  display: none;
+}
+
+.cell:hover div{
+  display: block;;
+}
