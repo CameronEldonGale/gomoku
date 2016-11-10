@@ -1,0 +1,422 @@
+<section ng-controller="gameCtrl">
+        <section class="chat-container">
+          {{test}}
+          <br>
+          <input type="text" name="name" value="" ng-model="text">
+          <br>
+          <button ng-click="send(text)"type="button" name="button">test</button>
+          <br>
+          <div class="text" >
+            <div class="chat" ng-repeat="message in messages track by $index">
+              {{message}}
+            </div>
+          </div>
+          <button id="black" type="button" name="button">black</button>
+          <button id="white" type="button" name="button">white</button>
+        </section>
+        <section class="game-container">
+          <section class="gameboard">
+            <section class="row row0">
+              <div class="cell cell0"><div id="cell0row0" class="piece"></div></div>
+              <div class="cell cell1"><div id="cell1row0"class="piece"></div></div>
+              <div class="cell cell2"><div id="cell2row0" class="piece"></div></div>
+              <div class="cell cell3"><div id="cell3row0"class="piece"></div></div>
+              <div class="cell cell4"><div id="cell4row0"class="piece"></div></div>
+              <div class="cell cell5"><div id="cell5row0"class="piece"></div></div>
+              <div class="cell cell6"><div id="cell6row0"class="piece"></div></div>
+              <div class="cell cell7"><div id="cell7row0"class="piece"></div></div>
+              <div class="cell cell8"><div id="cell8row0"class="piece"></div></div>
+              <div class="cell cell9"><div id="cell9row0"class="piece"></div></div>
+              <div class="cell cell10"><div id="cell10row0"class="piece"></div></div>
+              <div class="cell cell11"><div id="cell11row0"class="piece"></div></div>
+              <div class="cell cell12"><div id="cell12row0"class="piece"></div></div>
+              <div class="cell cell13"><div id="cell13row0"class="piece"></div></div>
+              <div class="cell cell14"><div id="cell14row0"class="piece"></div></div>
+              <div class="cell cell15"><div id="cell15row0"class="piece"></div></div>
+              <div class="cell cell16"><div id="cell16row0" class="piece"></div></div>
+              <div class="cell cell17"><div id="cell17row0" class="piece"></div></div>
+              <div class="cell cell18"><div id="cell18row0" class="piece"></div></div>
+            </section>
+            <section class="row row1">
+              <div  class="cell cell0"><div id="cell0row1"class="piece"></div></div>
+              <div  class="cell cell1"><div id="cell1row1"class="piece"></div></div>
+              <div  class="cell cell2"><div id="cell2row1"class="piece"></div></div>
+              <div  class="cell cell3"><div id="cell3row1"class="piece"></div></div>
+              <div class="cell cell4"><div id="cell4row1" class="piece"></div></div>
+              <div  class="cell cell5"><div id="cell5row1"class="piece"></div></div>
+              <div  class="cell cell6"><div id="cell6row1"class="piece"></div></div>
+              <div  class="cell cell7"><div id="cell7row1"class="piece"></div></div>
+              <div  class="cell cell8"><div id="cell8row1"class="piece"></div></div>
+              <div  class="cell cell9"><div id="cell9row1"class="piece"></div></div>
+              <div  class="cell cell10"><div id="cell10row1"class="piece"></div></div>
+              <div  class="cell cell11"><div id="cell11row1"class="piece"></div></div>
+              <div  class="cell cell12"><div id="cell12row1"class="piece"></div></div>
+              <div  class="cell cell13"><div id="cell13row1"class="piece"></div></div>
+              <div class="cell cell14"><div id="cell14row1" class="piece"></div></div>
+              <div  class="cell cell15"><div id="cell15row1"class="piece"></div></div>
+              <div  class="cell cell16"><div id="cell16row1"class="piece"></div></div>
+              <div  class="cell cell17"><div id="cell17row1"class="piece"></div></div>
+              <div  class="cell cell18"><div id="cell18row1"class="piece"></div></div>
+            </section>
+            <section class="row row2">
+              <div  class="cell cell0"><div id="cell0row2"class="piece"></div></div>
+              <div  class="cell cell1"><div id="cell1row2"class="piece"></div></div>
+              <div  class="cell cell2"><div id="cell2row2"class="piece"></div></div>
+              <div  class="cell cell3"><div id="cell3row2"class="piece"></div></div>
+              <div  class="cell cell4"><div id="cell4row2"class="piece"></div></div>
+              <div  class="cell cell5"><div id="cell5row2"class="piece"></div></div>
+              <div  class="cell cell6"><div id="cell6row2"class="piece"></div></div>
+              <div  class="cell cell7"><div id="cell7row2"class="piece"></div></div>
+              <div  class="cell cell8"><div id="cell8row2"class="piece"></div></div>
+              <div class="cell cell9"><div id="cell9row2" class="piece"></div></div>
+              <div  class="cell cell10"><div id="cell10row2"class="piece"></div></div>
+              <div class="cell cell11"><div id="cell11row2" class="piece"></div></div>
+              <div  class="cell cell12"><div id="cell12row2"class="piece"></div></div>
+              <div class="cell cell13"><div id="cell13row2" class="piece"></div></div>
+              <div  class="cell cell14"><div id="cell14row2"class="piece"></div></div>
+              <div  class="cell cell15"><div id="cell15row2" class="piece"></div></div>
+              <div  class="cell cell16"><div id="cell16row2"class="piece"></div></div>
+              <div  class="cell cell17"><div id="cell17row2"class="piece"></div></div>
+              <div  class="cell cell18"><div id="cell18row2"class="piece"></div></div>
+            </section>
+            <section class="row row3">
+              <div  class="cell cell0"><div id="cell0row3"class="piece"></div></div>
+              <div  class="cell cell1"><div id="cell1row3"class="piece"></div></div>
+              <div  class="cell cell2"><div id="cell2row3"class="piece"></div></div>
+              <div  class="cell cell3"><div id="cell3row3"class="piece"></div></div>
+              <div  class="cell cell4"><div id="cell4row3"class="piece"></div></div>
+              <div  class="cell cell5"><div id="cell5row3" class="piece"></div></div>
+              <div  class="cell cell6"><div id="cell6row3"class="piece"></div></div>
+              <div  class="cell cell7"><div id="cell7row3"class="piece"></div></div>
+              <div class="cell cell8"><div id="cell8row3"class="piece"></div></div>
+              <div  class="cell cell9"><div id="cell9row3"class="piece"></div></div>
+              <div  class="cell cell10"><div id="cell10row3"class="piece"></div></div>
+              <div  class="cell cell11"><div id="cell11row3"class="piece"></div></div>
+              <div  class="cell cell12"><div id="cell12row3"class="piece"></div></div>
+              <div  class="cell cell13"><div id="cell13row3"class="piece"></div></div>
+              <div  class="cell cell14"><div id="cell14row3"class="piece"></div></div>
+              <div  class="cell cell15"><div id="cell15row3"class="piece"></div></div>
+              <div class="cell cell16"><div id="cell16row3" class="piece"></div></div>
+              <div class="cell cell17"><div id="cell17row3"class="piece"></div></div>
+              <div class="cell cell18"><div id="cell18row3"  class="piece"></div></div>
+            </section>
+            <section class="row row4">
+              <div  class="cell cell0"><div id="cell0row4" class="piece"></div></div>
+              <div  class="cell cell1"><div id="cell1row4" class="piece"></div></div>
+              <div  class="cell cell2"><div id="cell2row4" class="piece"></div></div>
+              <div  class="cell cell3"><div id="cell3row4" class="piece"></div></div>
+              <div  class="cell cell4"><div id="cell4row4" class="piece"></div></div>
+              <div  class="cell cell5"><div id="cell5row4" class="piece"></div></div>
+              <div  class="cell cell6"><div id="cell6row4" class="piece"></div></div>
+              <div  class="cell cell7"><div id="cell7row4" class="piece"></div></div>
+              <div  class="cell cell8"><div id="cell8row4" class="piece"></div></div>
+              <div  class="cell cell9"><div id="cell9row4" class="piece"></div></div>
+              <div  class="cell cell10"><div id="cell10row4" class="piece"></div></div>
+              <div  class="cell cell11"><div id="cell11row4" class="piece"></div></div>
+              <div  class="cell cell12"><div id="cell12row4" class="piece"></div></div>
+              <div  class="cell cell13"><div id="cell13row4" class="piece"></div></div>
+              <div  class="cell cell14"><div id="cell14row4" class="piece"></div></div>
+              <div  class="cell cell15"><div id="cell15row4" class="piece"></div></div>
+              <div  class="cell cell16"><div id="cell16row4" class="piece"></div></div>
+              <div  class="cell cell17"><div id="cell17row4" class="piece"></div></div>
+              <div  class="cell cell18"><div id="cell18row4" class="piece"></div></div>
+            </section>
+            <section class="row row5">
+              <div  class="cell cell0"><div id="cell0row5" class="piece"></div></div>
+              <div  class="cell cell1"><div id="cell1row5" class="piece"></div></div>
+              <div  class="cell cell2"><div id="cell2row5" class="piece"></div></div>
+              <div  class="cell cell3"><div id="cell3row5" class="piece"></div></div>
+              <div  class="cell cell4"><div id="cell4row5" class="piece"></div></div>
+              <div  class="cell cell5"><div id="cell5row5" class="piece"></div></div>
+              <div  class="cell cell6"><div id="cell6row5" class="piece"></div></div>
+              <div  class="cell cell7"><div id="cell7row5" class="piece"></div></div>
+              <div  class="cell cell8"><div id="cell8row5" class="piece"></div></div>
+              <div  class="cell cell9"><div id="cell9row5" class="piece"></div></div>
+              <div   class="cell cell10"><div id="cell10row5" class="piece"></div></div>
+              <div   class="cell cell11"><div id="cell11row5" class="piece"></div></div>
+              <div   class="cell cell12"><div id="cell12row5" class="piece"></div></div>
+              <div   class="cell cell13"><div id="cell13row5" class="piece"></div></div>
+              <div   class="cell cell14"><div id="cell14row5" class="piece"></div></div>
+              <div   class="cell cell15"><div id="cell15row5" class="piece"></div></div>
+              <div   class="cell cell16"><div id="cell16row5" class="piece"></div></div>
+              <div   class="cell cell17"><div id="cell17row5" class="piece"></div></div>
+              <div   class="cell cell18"><div id="cell18row5" class="piece"></div></div>
+            </section>
+            <section class="row row6">
+              <div class="cell cell0"><div id="cell0row6" class="piece"></div></div>
+              <div class="cell cell1"><div id="cell1row6" class="piece"></div></div>
+              <div class="cell cell2"><div id="cell2row6" class="piece"></div></div>
+              <div class="cell cell3"><div id="cell3row6" class="piece"></div></div>
+              <div class="cell cell4"><div id="cell4row6" class="piece"></div></div>
+              <div class="cell cell5"><div id="cell5row6" class="piece"></div></div>
+              <div class="cell cell6"><div id="cell6row6" class="piece"></div></div>
+              <div class="cell cell7"><div id="cell7row6" class="piece"></div></div>
+              <div class="cell cell8"><div id="cell8row6" class="piece"></div></div>
+              <div class="cell cell9"><div id="cell9row6" class="piece"></div></div>
+              <div  class="cell cell10"><div  id="cell10row6" class="piece"></div></div>
+              <div  class="cell cell11"><div  id="cell11row6" class="piece"></div></div>
+              <div  class="cell cell12"><div  id="cell12row6" class="piece"></div></div>
+              <div  class="cell cell13"><div  id="cell13row6" class="piece"></div></div>
+              <div  class="cell cell14"><div  id="cell14row6" class="piece"></div></div>
+              <div  class="cell cell15"><div  id="cell15row6" class="piece"></div></div>
+              <div  class="cell cell16"><div  id="cell16row6" class="piece"></div></div>
+              <div  class="cell cell17"><div  id="cell17row6" class="piece"></div></div>
+              <div  class="cell cell18"><div  id="cell18row6" class="piece"></div></div>
+            </section>
+            <section class="row row7">
+              <div  class="cell cell0"><div   id="cell0row7" class="piece"></div></div>
+              <div  class="cell cell1"><div   id="cell1row7" class="piece"></div></div>
+              <div  class="cell cell2"><div   id="cell2row7" class="piece"></div></div>
+              <div  class="cell cell3"><div   id="cell3row7" class="piece"></div></div>
+              <div  class="cell cell4"><div   id="cell4row7" class="piece"></div></div>
+              <div  class="cell cell5"><div   id="cell5row7" class="piece"></div></div>
+              <div  class="cell cell6"><div   id="cell6row7" class="piece"></div></div>
+              <div  class="cell cell7"><div   id="cell7row7" class="piece"></div></div>
+              <div  class="cell cell8"><div   id="cell8row7" class="piece"></div></div>
+              <div  class="cell cell9"><div   id="cell9row7" class="piece"></div></div>
+              <div   class="cell cell10"><div id="cell10row7" class="piece"></div></div>
+              <div   class="cell cell11"><div id="cell11row7" class="piece"></div></div>
+              <div   class="cell cell12"><div id="cell12row7" class="piece"></div></div>
+              <div   class="cell cell13"><div id="cell13row7" class="piece"></div></div>
+              <div   class="cell cell14"><div id="cell14row7" class="piece"></div></div>
+              <div   class="cell cell15"><div id="cell15row7" class="piece"></div></div>
+              <div   class="cell cell16"><div id="cell16row7" class="piece"></div></div>
+              <div   class="cell cell17"><div id="cell17row7" class="piece"></div></div>
+              <div   class="cell cell18"><div id="cell18row7" class="piece"></div></div>
+            </section>
+            <section class="row row8">
+              <div  class="cell cell0"><div id="cell0row8" class="piece"></div></div>
+              <div  class="cell cell1"><div id="cell1row8" class="piece"></div></div>
+              <div  class="cell cell2"><div id="cell2row8" class="piece"></div></div>
+              <div  class="cell cell3"><div id="cell3row8" class="piece"></div></div>
+              <div  class="cell cell4"><div id="cell4row8" class="piece"></div></div>
+              <div  class="cell cell5"><div id="cell5row8" class="piece"></div></div>
+              <div  class="cell cell6"><div id="cell6row8" class="piece"></div></div>
+              <div  class="cell cell7"><div id="cell7row8" class="piece"></div></div>
+              <div  class="cell cell8"><div id="cell8row8" class="piece"></div></div>
+              <div  class="cell cell9"><div id="cell9row8" class="piece"></div></div>
+              <div  class="cell cell10"><div id="cell10row8" class="piece"></div></div>
+              <div  class="cell cell11"><div id="cell11row8" class="piece"></div></div>
+              <div  class="cell cell12"><div id="cell12row8" class="piece"></div></div>
+              <div  class="cell cell13"><div id="cell13row8" class="piece"></div></div>
+              <div  class="cell cell14"><div id="cell14row8" class="piece"></div></div>
+              <div  class="cell cell15"><div id="cell15row8" class="piece"></div></div>
+              <div  class="cell cell16"><div id="cell16row8" class="piece"></div></div>
+              <div  class="cell cell17"><div id="cell17row8" class="piece"></div></div>
+              <div  class="cell cell18"><div id="cell18row8" class="piece"></div></div>
+            </section>
+            <section class="row row9">
+              <div class="cell cell0"><div  id="cell0row9" class="piece"></div></div>
+              <div class="cell cell1"><div  id="cell1row9" class="piece"></div></div>
+              <div class="cell cell2"><div  id="cell2row9" class="piece"></div></div>
+              <div class="cell cell3"><div  id="cell3row9" class="piece"></div></div>
+              <div class="cell cell4"><div  id="cell4row9" class="piece"></div></div>
+              <div class="cell cell5"><div  id="cell5row9" class="piece"></div></div>
+              <div class="cell cell6"><div  id="cell6row9" class="piece"></div></div>
+              <div class="cell cell7"><div  id="cell7row9" class="piece"></div></div>
+              <div class="cell cell8"><div  id="cell8row9" class="piece"></div></div>
+              <div class="cell cell9"><div  id="cell9row9" class="piece"></div></div>
+              <div class="cell cell10"><div id="cell10row9" class="piece"></div></div>
+              <div class="cell cell11"><div id="cell11row9" class="piece"></div></div>
+              <div class="cell cell12"><div id="cell12row9" class="piece"></div></div>
+              <div class="cell cell13"><div id="cell13row9" class="piece"></div></div>
+              <div class="cell cell14"><div id="cell14row9" class="piece"></div></div>
+              <div class="cell cell15"><div id="cell15row9" class="piece"></div></div>
+              <div class="cell cell16"><div id="cell16row9" class="piece"></div></div>
+              <div class="cell cell17"><div id="cell17row9" class="piece"></div></div>
+              <div class="cell cell18"><div id="cell18row9" class="piece"></div></div>
+            </section>
+            <section class="row row10">
+              <div  class="cell cell0"><div  id="cell0row10" class="piece"></div></div>
+              <div  class="cell cell1"><div  id="cell1row10" class="piece"></div></div>
+              <div  class="cell cell2"><div  id="cell2row10" class="piece"></div></div>
+              <div  class="cell cell3"><div  id="cell3row10" class="piece"></div></div>
+              <div  class="cell cell4"><div  id="cell4row10" class="piece"></div></div>
+              <div  class="cell cell5"><div  id="cell5row10" class="piece"></div></div>
+              <div  class="cell cell6"><div  id="cell6row10" class="piece"></div></div>
+              <div  class="cell cell7"><div  id="cell7row10" class="piece"></div></div>
+              <div  class="cell cell8"><div  id="cell8row10" class="piece"></div></div>
+              <div  class="cell cell9"><div  id="cell9row10" class="piece"></div></div>
+              <div  class="cell cell10"><div id="cell10row10" class="piece"></div></div>
+              <div  class="cell cell11"><div id="cell11row10" class="piece"></div></div>
+              <div  class="cell cell12"><div id="cell12row10" class="piece"></div></div>
+              <div  class="cell cell13"><div id="cell13row10" class="piece"></div></div>
+              <div  class="cell cell14"><div id="cell14row10" class="piece"></div></div>
+              <div  class="cell cell15"><div id="cell15row10" class="piece"></div></div>
+              <div  class="cell cell16"><div id="cell16row10" class="piece"></div></div>
+              <div  class="cell cell17"><div id="cell17row10" class="piece"></div></div>
+              <div  class="cell cell18"><div id="cell18row10" class="piece"></div></div>
+            </section>
+            <section class="row row11">
+              <div  class="cell cell0"><div  id="cell0row11" class="piece"></div></div>
+              <div  class="cell cell1"><div  id="cell1row11" class="piece"></div></div>
+              <div  class="cell cell2"><div  id="cell2row11" class="piece"></div></div>
+              <div  class="cell cell3"><div  id="cell3row11" class="piece"></div></div>
+              <div  class="cell cell4"><div  id="cell4row11" class="piece"></div></div>
+              <div  class="cell cell5"><div  id="cell5row11" class="piece"></div></div>
+              <div  class="cell cell6"><div  id="cell6row11" class="piece"></div></div>
+              <div  class="cell cell7"><div  id="cell7row11" class="piece"></div></div>
+              <div  class="cell cell8"><div  id="cell8row11" class="piece"></div></div>
+              <div  class="cell cell9"><div  id="cell9row11" class="piece"></div></div>
+              <div  class="cell cell10"><div id="cell10row11" class="piece"></div></div>
+              <div  class="cell cell11"><div id="cell11row11" class="piece"></div></div>
+              <div  class="cell cell12"><div id="cell12row11" class="piece"></div></div>
+              <div  class="cell cell13"><div id="cell13row11" class="piece"></div></div>
+              <div  class="cell cell14"><div id="cell14row11" class="piece"></div></div>
+              <div  class="cell cell15"><div id="cell15row11" class="piece"></div></div>
+              <div  class="cell cell16"><div id="cell16row11" class="piece"></div></div>
+              <div  class="cell cell17"><div id="cell17row11" class="piece"></div></div>
+              <div  class="cell cell18"><div id="cell18row11" class="piece"></div></div>
+            </section>
+            <section class="row row12">
+              <div  class="cell cell0"><div  id="cell0row12" class="piece"></div></div>
+              <div  class="cell cell1"><div  id="cell1row12" class="piece"></div></div>
+              <div  class="cell cell2"><div  id="cell2row12" class="piece"></div></div>
+              <div  class="cell cell3"><div  id="cell3row12" class="piece"></div></div>
+              <div  class="cell cell4"><div  id="cell4row12" class="piece"></div></div>
+              <div  class="cell cell5"><div  id="cell5row12" class="piece"></div></div>
+              <div  class="cell cell6"><div  id="cell6row12" class="piece"></div></div>
+              <div  class="cell cell7"><div  id="cell7row12" class="piece"></div></div>
+              <div  class="cell cell8"><div  id="cell8row12" class="piece"></div></div>
+              <div  class="cell cell9"><div  id="cell9row12" class="piece"></div></div>
+              <div  class="cell cell10"><div id="cell10row12" class="piece"></div></div>
+              <div  class="cell cell11"><div id="cell11row12" class="piece"></div></div>
+              <div  class="cell cell12"><div id="cell12row12" class="piece"></div></div>
+              <div  class="cell cell13"><div id="cell13row12" class="piece"></div></div>
+              <div  class="cell cell14"><div id="cell14row12" class="piece"></div></div>
+              <div  class="cell cell15"><div id="cell15row12" class="piece"></div></div>
+              <div  class="cell cell16"><div id="cell16row12" class="piece"></div></div>
+              <div  class="cell cell17"><div id="cell17row12" class="piece"></div></div>
+              <div  class="cell cell18"><div id="cell18row12" class="piece"></div></div>
+            </section>
+            <section class="row row13">
+              <div  class="cell cell0"><div  id="cell0row13" class="piece"></div></div>
+              <div  class="cell cell1"><div  id="cell1row13" class="piece"></div></div>
+              <div  class="cell cell2"><div  id="cell2row13" class="piece"></div></div>
+              <div  class="cell cell3"><div  id="cell3row13" class="piece"></div></div>
+              <div  class="cell cell4"><div  id="cell4row13" class="piece"></div></div>
+              <div  class="cell cell5"><div  id="cell5row13" class="piece"></div></div>
+              <div  class="cell cell6"><div  id="cell6row13" class="piece"></div></div>
+              <div  class="cell cell7"><div  id="cell7row13" class="piece"></div></div>
+              <div  class="cell cell8"><div  id="cell8row13" class="piece"></div></div>
+              <div  class="cell cell9"><div  id="cell9row13" class="piece"></div></div>
+              <div  class="cell cell10"><div id="cell10row13" class="piece"></div></div>
+              <div  class="cell cell11"><div id="cell11row13" class="piece"></div></div>
+              <div  class="cell cell12"><div id="cell12row13" class="piece"></div></div>
+              <div  class="cell cell13"><div id="cell13row13" class="piece"></div></div>
+              <div  class="cell cell14"><div id="cell14row13" class="piece"></div></div>
+              <div  class="cell cell15"><div id="cell15row13" class="piece"></div></div>
+              <div  class="cell cell16"><div id="cell16row13" class="piece"></div></div>
+              <div  class="cell cell17"><div id="cell17row13" class="piece"></div></div>
+              <div  class="cell cell18"><div id="cell18row13" class="piece"></div></div>
+            </section>
+            <section class="row row14">
+              <div class="cell cell0"><div id="cell0row14" class="piece"></div></div>
+              <div class="cell cell1"><div id="cell1row14" class="piece"></div></div>
+              <div class="cell cell2"><div id="cell2row14"class="piece"></div></div>
+              <div class="cell cell3"><div id="cell3row14"class="piece"></div></div>
+              <div class="cell cell4"><div id="cell4row14"class="piece"></div></div>
+              <div class="cell cell5"><div id="cell5row14"class="piece"></div></div>
+              <div class="cell cell6"><div id="cell6row14"class="piece"></div></div>
+              <div class="cell cell7"><div id="cell7row14"class="piece"></div></div>
+              <div class="cell cell8"><div id="cell8row14"class="piece"></div></div>
+              <div class="cell cell9"><div id="cell9row14"class="piece"></div></div>
+              <div  class="cell cell10"><div id="cell10row14"class="piece"></div></div>
+              <div  class="cell cell11"><div id="cell11row14"class="piece"></div></div>
+              <div  class="cell cell12"><div id="cell12row14"class="piece"></div></div>
+              <div  class="cell cell13"><div id="cell13row14"class="piece"></div></div>
+              <div  class="cell cell14"><div id="cell14row14"class="piece"></div></div>
+              <div  class="cell cell15"><div id="cell15row14"class="piece"></div></div>
+              <div  class="cell cell16"><div id="cell16row14"class="piece"></div></div>
+              <div  class="cell cell17"><div id="cell17row14"class="piece"></div></div>
+              <div  class="cell cell18"><div id="cell18row14"class="piece"></div></div>
+            </section>
+            <section class="row row15">
+              <div class="cell cell0"><div  id="cell0row15" class="piece"></div></div>
+              <div class="cell cell1"><div  id="cell1row15" class="piece"></div></div>
+              <div class="cell cell2"><div  id="cell2row15" class="piece"></div></div>
+              <div class="cell cell3"><div  id="cell3row15" class="piece"></div></div>
+              <div class="cell cell4"><div  id="cell4row15" class="piece"></div></div>
+              <div class="cell cell5"><div  id="cell5row15" class="piece"></div></div>
+              <div class="cell cell6"><div  id="cell6row15" class="piece"></div></div>
+              <div class="cell cell7"><div  id="cell7row15" class="piece"></div></div>
+              <div class="cell cell8"><div  id="cell8row15" class="piece"></div></div>
+              <div class="cell cell9"><div  id="cell9row15" class="piece"></div></div>
+              <div class="cell cell10"><div id="cell10row15" class="piece"></div></div>
+              <div class="cell cell11"><div id="cell11row15" class="piece"></div></div>
+              <div class="cell cell12"><div id="cell12row15" class="piece"></div></div>
+              <div class="cell cell13"><div id="cell13row15" class="piece"></div></div>
+              <div class="cell cell14"><div id="cell14row15" class="piece"></div></div>
+              <div class="cell cell15"><div id="cell15row15" class="piece"></div></div>
+              <div class="cell cell16"><div id="cell16row15" class="piece"></div></div>
+              <div class="cell cell17"><div id="cell17row15" class="piece"></div></div>
+              <div class="cell cell18"><div id="cell18row15" class="piece"></div></div>
+            </section>
+            <section class="row row16">
+              <div  class="cell cell0"><div  id="cell0row16" class="piece"></div></div>
+              <div  class="cell cell1"><div  id="cell1row16" class="piece"></div></div>
+              <div  class="cell cell2"><div  id="cell2row16" class="piece"></div></div>
+              <div  class="cell cell3"><div  id="cell3row16" class="piece"></div></div>
+              <div  class="cell cell4"><div  id="cell4row16" class="piece"></div></div>
+              <div  class="cell cell5"><div  id="cell5row16" class="piece"></div></div>
+              <div  class="cell cell6"><div  id="cell6row16" class="piece"></div></div>
+              <div  class="cell cell7"><div  id="cell7row16" class="piece"></div></div>
+              <div  class="cell cell8"><div  id="cell8row16" class="piece"></div></div>
+              <div  class="cell cell9"><div  id="cell9row16" class="piece"></div></div>
+              <div  class="cell cell10"><div id="cell10row16" class="piece"></div></div>
+              <div  class="cell cell11"><div id="cell11row16" class="piece"></div></div>
+              <div  class="cell cell12"><div id="cell12row16" class="piece"></div></div>
+              <div  class="cell cell13"><div id="cell13row16" class="piece"></div></div>
+              <div  class="cell cell14"><div id="cell14row16" class="piece"></div></div>
+              <div  class="cell cell15"><div id="cell15row16" class="piece"></div></div>
+              <div  class="cell cell16"><div id="cell16row16" class="piece"></div></div>
+              <div  class="cell cell17"><div id="cell17row16" class="piece"></div></div>
+              <div  class="cell cell18"><div id="cell18row16" class="piece"></div></div>
+            </section>
+            <section class="row row17">
+              <div  class="cell cell0"><div  id="cell0row17" class="piece"></div></div>
+              <div  class="cell cell1"><div  id="cell1row17" class="piece"></div></div>
+              <div  class="cell cell2"><div  id="cell2row17" class="piece"></div></div>
+              <div  class="cell cell3"><div  id="cell3row17" class="piece"></div></div>
+              <div  class="cell cell4"><div  id="cell4row17" class="piece"></div></div>
+              <div  class="cell cell5"><div  id="cell5row17" class="piece"></div></div>
+              <div  class="cell cell6"><div  id="cell6row17" class="piece"></div></div>
+              <div  class="cell cell7"><div  id="cell7row17" class="piece"></div></div>
+              <div  class="cell cell8"><div  id="cell8row17" class="piece"></div></div>
+              <div  class="cell cell9"><div  id="cell9row17" class="piece"></div></div>
+              <div  class="cell cell10"><div id="cell10row17" class="piece"></div></div>
+              <div  class="cell cell11"><div id="cell11row17" class="piece"></div></div>
+              <div  class="cell cell12"><div id="cell12row17" class="piece"></div></div>
+              <div  class="cell cell13"><div id="cell13row17" class="piece"></div></div>
+              <div  class="cell cell14"><div id="cell14row17" class="piece"></div></div>
+              <div  class="cell cell15"><div id="cell15row17" class="piece"></div></div>
+              <div  class="cell cell16"><div id="cell16row17" class="piece"></div></div>
+              <div  class="cell cell17"><div id="cell17row17" class="piece"></div></div>
+              <div  class="cell cell18"><div id="cell18row17" class="piece"></div></div>
+            </section>
+            <section class="row row18">
+              <div class="cell cell0"><div  id="cell0row18" class="piece"></div></div>
+              <div class="cell cell1"><div  id="cell1row18" class="piece"></div></div>
+              <div class="cell cell2"><div  id="cell2row18" class="piece"></div></div>
+              <div class="cell cell3"><div  id="cell3row18" class="piece"></div></div>
+              <div class="cell cell4"><div  id="cell4row18" class="piece"></div></div>
+              <div class="cell cell5"><div  id="cell5row18" class="piece"></div></div>
+              <div class="cell cell6"><div  id="cell6row18" class="piece"></div></div>
+              <div class="cell cell7"><div  id="cell7row18" class="piece"></div></div>
+              <div class="cell cell8"><div  id="cell8row18" class="piece"></div></div>
+              <div class="cell cell9"><div  id="cell9row18" class="piece"></div></div>
+              <div class="cell cell10"><div id="cell10row18" class="piece"></div></div>
+              <div class="cell cell11"><div id="cell11row18" class="piece"></div></div>
+              <div class="cell cell12"><div id="cell12row18" class="piece"></div></div>
+              <div class="cell cell13"><div id="cell13row18" class="piece"></div></div>
+              <div class="cell cell14"><div id="cell14row18" class="piece"></div></div>
+              <div class="cell cell15"><div id="cell15row18" class="piece"></div></div>
+              <div class="cell cell16"><div id="cell16row18" class="piece"></div></div>
+              <div class="cell cell17"><div id="cell17row18" class="piece"></div></div>
+              <div class="cell cell18"><div id="cell18row18" class="piece"></div></div>
+            </section>
+
+          </section>
+
+        </section>
+</section>

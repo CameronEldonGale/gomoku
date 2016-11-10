@@ -1,1 +1,17 @@
-angular.module('gomoku',[])
+angular.module('gomoku',['ui.router'])
+
+.config( function($stateProvider, $urlRouterProvider){
+    $stateProvider
+    .state('chat', {
+      url:'/',
+      templateUrl: '../views/chatroom.html',
+      // controller: "gameCtrl"
+    })
+      .state('game', {
+        url:'/game',
+        templateUrl: '../views/game.html',
+        controller: "gameCtrl"
+      })
+    $urlRouterProvider.otherwise('/')
+  }
+)
