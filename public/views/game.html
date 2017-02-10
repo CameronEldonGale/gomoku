@@ -1,16 +1,20 @@
 <section ng-controller="gameCtrl">
+  <h3>Chats: </h3>
+
         <section class="chat-container">
-          {{test}}
-          <br>
-          <input type="text" name="name" value="" ng-model="text">
-          <br>
-          <button ng-click="send(text)"type="button" name="button">test</button>
-          <br>
           <div class="text" >
             <div class="chat" ng-repeat="message in messages track by $index">
-              {{message}}
+               <span style="color: blue">{{message.name}}</span> : {{message.message}}
             </div>
           </div>
+          <br>
+          <br>
+          <input type="text" ng-model="text" ng-keypress="($event.which === 13)?sendChat(text):0">
+          <button ng-click="sendChat(text)"type="button" name="button">send</button>
+          <br>
+          <br>
+          <hr>
+          <br>
           <button id="black" type="button" name="button">black</button>
           <button id="white" type="button" name="button">white</button>
         </section>

@@ -5,7 +5,7 @@ angular.module('gomoku',['ui.router'])
     .state('chat', {
       url:'/',
       templateUrl: '../views/chatroom.html',
-      // controller: "gameCtrl"
+      controller: "landingCtrl"
     })
       .state('game', {
         url:'/game',

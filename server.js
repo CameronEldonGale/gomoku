@@ -3,14 +3,23 @@ var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
+var room = {};
 app.use(express.static('./public'));
 
 io.on('connection', function(socket){
-  console.log(socket.id);
-    socket.on('test', function(stuff){
-      console.log(stuff);
-      console.log('test');
-      socket.emit("hey", stuff)
+
+  socket.on('enter', function (name) {
+    room[ socket.id] = name
+    console.log(room[ socket.id] );
+  })
+    socket.on('chat', function(stuff){
+      var chatMessage = {
+        time: new Date(),
+        name: room[ socket.id],
+        message: stuff
+      }
+      console.log(room[socket.id]+' : '+ chatMessage.message);
+      socket.emit("hey", chatMessage)
     })
 
     io.on('disconnect', function(){

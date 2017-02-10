@@ -1,5 +1,6 @@
-angular.module('gomoku').controller('gameCtrl', function($scope,$state){
+angular.module('gomoku').controller('gameCtrl', function($scope,$state,$rootScope){
   $scope.test = "game controll thing";
+
   (function(){
           // var testArray =[];
           var gameboard = Array(19).fill("empty").map(function(row){
@@ -129,6 +130,12 @@ angular.module('gomoku').controller('gameCtrl', function($scope,$state){
           }
         })
   })()
+
+  $scope.sendChat = function( text) {
+    $rootScope.send(text)
+    $scope.text ="";
+  }
+
 
 
 })

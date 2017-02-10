@@ -1,0 +1,28 @@
+{
+  "name": "gomoku",
+  "version": "1.0.0",
+  "description": "go like game",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.1",
+    "socket.io": "^1.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CameronEldonGale/gomoku.git"
+  },
+  "keywords": [
+    "gomoku"
+  ],
+  "author": "CameronEldonGale",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CameronEldonGale/gomoku/issues"
+  },
+  "homepage": "https://github.com/CameronEldonGale/gomoku#readme"
+}
